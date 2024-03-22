@@ -20,19 +20,13 @@
     }
 </style>
 <div class="container">
- <img src="https://pagesix.com/wp-content/uploads/sites/3/2022/05/taylor-swift-666.jpg" width="300" height="300">
-
-    <h1>
-        How much should you spend on your food?
-    </h1>
+    <h1>You should spend {{r}} on your food per week</h1>
     <form action="/main" method="post">
+        <input type="submit" value="main">
+    </form>
 
-            <h2>
-            May I know your name?
-            </h2>
-
-           <input type="text" step="0.01" name="name">
-           <input type="submit" value="enter">
+    <form action="/end" method="post">
+        <input type="submit" value="End">
     </form>
 
 </div>
