@@ -1,8 +1,8 @@
-##
+"""
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-"""
+
 df = pd.read_csv("D:/NTU/AI with Advanced Predictive Techniques in Finance/3/FoodExpenditure(1).csv")
 Y = df.loc[:,["foodexp"]]
 X = df.loc[:,["income"]]
@@ -12,7 +12,7 @@ pred = model.predict(X)
 from sklearn.metrics import mean_squared_error
 rmse = mean_squared_error(Y,pred)**0.5
 """
-##
+
 from flask import Flask, request, render_template
 import sqlite3
 import datetime
